@@ -62,7 +62,7 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.4.0</version>
         <configuration>
-          <warSourceDirectory>src/main/webapp</warSourceDirectory>
+          <warSourceDirectory>src/test/java</warSourceDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
           <webResources>
             <resource>
