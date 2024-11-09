@@ -61,6 +61,16 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.4.0</version>
+        <configuration>
+          <warSourceDirectory>src/main/webapp</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+          <webResources>
+            <resource>
+              <directory>src/main/resources</directory>
+              <targetPath>WEB-INF/classes</targetPath>
+            </resource>
+          </webResources>
+        </configuration>
       </plugin>
     </plugins>
   </build>
